@@ -25,15 +25,11 @@ public class Main {
         System.out.println("4. Humble, Trustworthy");
         Scanner houseScanner = new Scanner(System.in);
         int house = houseScanner.nextInt();
-        switch (house){
-            case 1:
-                System.out.printf("You may be in %s!%n", House.GRYFFINDOR);
-            case 2:
-                System.out.printf("You may be in %s!%n", House.SLYTHERIN);
-            case 3:
-                System.out.printf("You may be in %s!%n", House.RAVENCLAW);
-            case 4:
-                System.out.printf("You may be in %s!%n", House.HUFFLEPUFF);
+        switch (house) {
+            case 1 -> System.out.printf("You may be in %s!%n", House.GRYFFINDOR);
+            case 2 -> System.out.printf("You may be in %s!%n", House.SLYTHERIN);
+            case 3 -> System.out.printf("You may be in %s!%n", House.RAVENCLAW);
+            case 4 -> System.out.printf("You may be in %s!%n", House.HUFFLEPUFF);
         }
 
         Scanner yearScanner = new Scanner(System.in);
